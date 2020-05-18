@@ -1,5 +1,7 @@
 # balenaOS slowdown
 
+> **Update 18 May 2020**: The slowdown is only observed with the B01 revision. See [forum post](https://forums.balena.io/t/upgrading-to-balenaos-2-47-slows-down-app-by-75/93834/23?u=pdboef) for more information.
+
 The Python script `benchmark.py` in this repository runs significantly slower on a **Jetson Nano Dev Kit** with **balenaOS 2.47** than it does with **balenaOS 2.45**. The Python script uses TFLite to do 100 inferences on a neural network and reports its timing. The results can be seen below and reproduced by running the following command if you have the balena CLI installed and an application `<app-name>` set-up with a Jetson Nano:
 
 ```
